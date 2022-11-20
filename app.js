@@ -20,4 +20,7 @@ app.use(userRoutes);
 
 app.use(errorController.get404)
 
-app.listen(3030);
+const port = 3030
+app.listen(port, () => {
+    console.log(`server is listening at ${port}`)
+});
